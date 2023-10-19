@@ -33,7 +33,7 @@ public class Main {
         }
 
         for (int i = 0; i < myArrayList.size(); i++) {
-            // System.out.println(myArrayList.get(i));
+            System.out.println(myArrayList.get(i));
         }
 
         // next question
@@ -49,8 +49,20 @@ public class Main {
         }
 
         for (int i = 0; i < threeDigitNumsArray.size(); i++) {
-            System.out.println(threeDigitNums);
             threeDigitNums += threeDigitNumsArray.get(i);
+        }
+        System.out.println(threeDigitNums);
+
+        // next question
+
+        for (int i = 0; i < myArrayList.size(); i++) {
+            if (myArrayList.get(i) % 3 == 0) {
+                myArrayList.remove(i);
+            }
+        }
+
+        for (int i = 0; i < myArrayList.size(); i++) {
+            System.out.println(myArrayList.get(i));
         }
     }
 }
