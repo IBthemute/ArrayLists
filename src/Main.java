@@ -25,7 +25,7 @@ public class Main {
                 1134, 1529, 1552, 1764, 1981, 1862, 1430, 1793, 1901, 1909
         };
         ArrayList<Integer> myArrayList = new ArrayList<>();
-        
+
         for (int i = 0; i < data.length; i++) {
             if (data[i] % 2 == 1) {
                 myArrayList.add(data[i]);
@@ -33,7 +33,24 @@ public class Main {
         }
 
         for (int i = 0; i < myArrayList.size(); i++) {
-            System.out.println(myArrayList.get(i));
+            // System.out.println(myArrayList.get(i));
+        }
+
+        // next question
+
+        String threeDigitNums = "";
+        ArrayList<String> threeDigitNumsArray = new ArrayList<>();
+
+        for (int i = 0; i < data.length; i++) {
+            String num = Integer.toString(data[i]);
+            if (num.length() == 3) {
+                threeDigitNumsArray.add(num);
+            }
+        }
+
+        for (int i = 0; i < threeDigitNumsArray.size(); i++) {
+            System.out.println(threeDigitNums);
+            threeDigitNums += threeDigitNumsArray.get(i);
         }
     }
 }
